@@ -64,12 +64,12 @@ async def alive_function(message: Message, answers):
         InlineQueryResultArticle(
             title="Alive",
             description="Check Bot's Stats",
-            thumb_url="https://graph.org/file/c6a2ed96648fd03377dc9.jpg",
+            thumb_url="https://telegra.ph/file/93d22eb580bcaef0fd877.jpg",
             input_message_content=InputTextMessageContent(
                 msg, parse_mode=ParseMode.HTML, disable_web_page_preview=True
             ),
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton("──「 𝗦𝗧𝗥𝗔𝗡𝗚𝗘𝗥-𝗫𝗗 」──", callback_data="helper")]]
+                [[InlineKeyboardButton("──「 𝐌𝐎𝐍𝐒𝐓𝐄𝐑 」──", callback_data="helper")]]
             ),
         )
     )
@@ -82,7 +82,7 @@ async def help_function(answers):
         InlineQueryResultArticle(
             title="Help Article!",
             description="Check Command List & Help",
-            thumb_url="https://graph.org/file/c6a2ed96648fd03377dc9.jpg",
+            thumb_url="https://telegra.ph/file/93d22eb580bcaef0fd877.jpg",
             input_message_content=InputTextMessageContent(
                 Data.text_help_menu.format(len(CMD_HELP))
             ),
